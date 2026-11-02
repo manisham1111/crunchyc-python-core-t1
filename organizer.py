@@ -7,7 +7,7 @@ def get_category(file_path):
     """Identify the category of a file."""
     extension = file_path.suffix.lower()
 
-    if extension in [".jpg", ".jpeg", ".png"]:
+    if extension in [".jpg", ".jpeg", ".png", ".gif", ".bmp", ".webp"]:
         return "Images"
     elif extension == ".pdf":
         return "PDFs"
